@@ -13,7 +13,6 @@ class MyAppState extends State<MyApp> {
   var apple = ['Apple'];
   var orange = ['Orange'];
   var rambutan = ['Rambutan'];
-  var _number;
   var _message = '';
 
   final numCon = new TextEditingController();
@@ -32,7 +31,6 @@ class MyAppState extends State<MyApp> {
           Text('3) ' + rambutan[0]),
           TextField(
               controller: numCon,
-              keyboardType: TextInputType.number,
               decoration: InputDecoration(
                 hintText: "Enter fruit number",
               )),
